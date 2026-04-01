@@ -1,0 +1,28 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#F5F0E6"/>
+  <rect x="26" y="26" width="1148" height="578" rx="48" fill="#FFF9EF" stroke="rgba(16,33,68,0.12)"/>
+  <circle cx="1048" cy="118" r="140" fill="#D2FF4D" fill-opacity="0.42"/>
+  <circle cx="1012" cy="104" r="206" fill="#0052FF" fill-opacity="0.16"/>
+  <circle cx="184" cy="64" r="122" fill="#FF4FD8" fill-opacity="0.12"/>
+  <text x="78" y="124" fill="#102144" font-family="Arial, sans-serif" font-size="28" font-weight="700" letter-spacing="3">BASE MINI APP CONCEPT</text>
+  <text x="76" y="240" fill="#102144" font-family="Arial, sans-serif" font-size="94" font-weight="700">BaseScore</text>
+  <text x="76" y="314" fill="#0052FF" font-family="Arial, sans-serif" font-size="54" font-weight="700">Look less like a farmer.</text>
+  <text x="76" y="374" fill="#0052FF" font-family="Arial, sans-serif" font-size="54" font-weight="700">Score more like a local.</text>
+  <text x="78" y="454" fill="#3E4E74" font-family="Arial, sans-serif" font-size="28">A reputation-style app for Base users who care about airdrops,</text>
+  <text x="78" y="492" fill="#3E4E74" font-family="Arial, sans-serif" font-size="28">status, and clean onchain behavior.</text>
+  <rect x="750" y="176" width="330" height="330" rx="48" fill="#FFFDF7" stroke="#C9D4F6"/>
+  <circle cx="915" cy="340" r="104" fill="url(#ring)"/>
+  <circle cx="915" cy="340" r="76" fill="#FFF8EA"/>
+  <text x="870" y="356" fill="#102144" font-family="Arial, sans-serif" font-size="68" font-weight="700">74</text>
+  <text x="844" y="392" fill="#52617F" font-family="Arial, sans-serif" font-size="22">BASESCORE</text>
+  <rect x="800" y="436" width="232" height="42" rx="21" fill="#D2FF4D"/>
+  <text x="840" y="463" fill="#102144" font-family="Arial, sans-serif" font-size="20" font-weight="700">CLEAN OPTIMIZER</text>
+  <text x="78" y="564" fill="#52617F" font-family="Arial, sans-serif" font-size="24">by gizdusum.base.eth / @gizdusumandnode</text>
+  <defs>
+    <linearGradient id="ring" x1="830" y1="252" x2="998" y2="428" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#0052FF"/>
+      <stop offset="0.45" stop-color="#FF7A28"/>
+      <stop offset="1" stop-color="#D2FF4D"/>
+    </linearGradient>
+  </defs>
+</svg>

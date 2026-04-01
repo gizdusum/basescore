@@ -1,0 +1,37 @@
+{
+  "accountAssociation": {
+    "header": "",
+    "payload": "",
+    "signature": ""
+  },
+  "miniapp": {
+    "version": "1",
+    "name": "BaseScore",
+    "homeUrl": "https://basescore.proveit.today/",
+    "iconUrl": "https://basescore.proveit.today/icon.png",
+    "splashImageUrl": "https://basescore.proveit.today/icon.png",
+    "splashBackgroundColor": "#f5f0e6",
+    "subtitle": "Reputation for Base hunters",
+    "description": "BaseScore helps Base users understand whether their wallet activity looks meaningful, sticky, and reward-worthy.",
+    "canonicalDomain": "basescore.proveit.today",
+    "primaryCategory": "finance",
+    "tags": [
+      "base",
+      "reputation",
+      "airdrop",
+      "onchain"
+    ],
+    "heroImageUrl": "https://basescore.proveit.today/cover.svg",
+    "tagline": "Look less like a farmer. Score more like a local.",
+    "ogTitle": "BaseScore",
+    "ogDescription": "Score your real onchain reputation on Base.",
+    "ogImageUrl": "https://basescore.proveit.today/cover.svg",
+    "requiredChains": [
+      "eip155:8453"
+    ],
+    "screenshotUrls": [
+      "https://basescore.proveit.today/cover.svg"
+    ],
+    "noindex": false
+  }
+}

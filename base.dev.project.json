@@ -1,0 +1,30 @@
+{
+  "name": "BaseScore",
+  "primaryUrl": "https://basescore.proveit.today/",
+  "tagline": "Look less like a farmer. Score more like a local.",
+  "description": "BaseScore is a reputation-style mini app for Base users who care about airdrops, status, and clean onchain behavior. It helps hunters understand whether their wallet activity looks organic, sticky, and worth rewarding.",
+  "category": "finance",
+  "tags": [
+    "base",
+    "airdrop",
+    "reputation",
+    "onchain",
+    "miniapp"
+  ],
+  "iconUrl": "https://basescore.proveit.today/icon.png",
+  "coverImageUrl": "https://basescore.proveit.today/cover.svg",
+  "screenshots": [
+    "https://basescore.proveit.today/cover.svg",
+    "https://basescore.proveit.today/cover-preview.png"
+  ],
+  "publisher": {
+    "basename": "gizdusum.base.eth",
+    "x": "https://x.com/gizdusumandnode"
+  },
+  "notes": [
+    "Register this project on Base.dev after deploy.",
+    "Use the same primary URL and media assets listed here.",
+    "Target production domain is https://basescore.proveit.today/.",
+    "Deploy BaseScore as a standalone site before generating the final accountAssociation values."
+  ]
+}

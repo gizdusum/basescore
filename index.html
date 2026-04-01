@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BaseScore | Reputation for Base hunters</title>
+  <meta name="description" content="BaseScore turns Base activity into a clear reputation score for users who care about airdrops, status, and real onchain credibility." />
+  <meta property="og:title" content="BaseScore" />
+  <meta property="og:description" content="Score your real onchain reputation on Base. Built for hunters, collectors, and clean power users." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="https://basescore.proveit.today/cover.svg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="BaseScore" />
+  <meta name="twitter:description" content="Look less like a farmer. Score more like a local." />
+  <meta name="twitter:image" content="https://basescore.proveit.today/cover.svg" />
+  <meta
+    name="fc:miniapp"
+    content='{
+      "version":"next",
+      "imageUrl":"https://basescore.proveit.today/cover.svg",
+      "button":{
+        "title":"Open BaseScore",
+        "action":{
+          "type":"launch_miniapp",
+          "name":"BaseScore",
+          "url":"https://basescore.proveit.today/"
+        }
+      }
+    }'
+  />
+  <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Archivo+Expanded:wght@500;700&family=Instrument+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <div class="noise"></div>
+    <header class="topbar">
+      <a class="brand" href="#top" aria-label="BaseScore home">
+        <span class="brand-mark">BS</span>
+        <span class="brand-copy">
+          <strong>BaseScore</strong>
+          <span>Reputation for Base hunters</span>
+        </span>
+      </a>
+
+      <div class="topbar-actions">
+        <a class="ghost-link" href="https://x.com/gizdusumandnode" target="_blank" rel="noreferrer">Built by @gizdusumandnode</a>
+        <button class="wallet-button" id="connectButton" type="button">Connect Base wallet</button>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero panel panel-hero">
+        <div class="hero-copy">
+          <p class="eyebrow">Base mini app concept</p>
+          <h1>Look less like a farmer. <span>Score more like a local.</span></h1>
+          <p class="hero-text">
+            BaseScore helps Base users understand whether their activity looks meaningful, sticky, and worth rewarding.
+            It is designed for hunters who want signal, not another spammy quest list.
+          </p>
+
+          <div class="hero-actions">
+            <button class="primary-button" id="heroConnectButton" type="button">Open my score</button>
+            <button class="secondary-button" id="shareButton" type="button">Share preview on X</button>
+          </div>
+
+          <div class="hero-tags">
+            <span>Clean score</span>
+            <span>Squad-ready</span>
+            <span>Base-native hints</span>
+            <span>English-first UX</span>
+          </div>
+        </div>
+
+        <aside class="score-orb panel inset-panel">
+          <div class="score-topline">
+            <span>Live preview</span>
+            <span class="status-pill" id="connectionState">Not connected</span>
+          </div>
+
+          <div class="orb-wrap">
+            <div class="orb-shell">
+              <div class="orb-core">
+                <div class="score-value" id="scoreValue">74</div>
+                <div class="score-label">BaseScore</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="score-summary">
+            <div>
+              <span class="metric-label">Persona</span>
+              <strong id="personaValue">Clean Optimizer</strong>
+            </div>
+            <div>
+              <span class="metric-label">Bias</span>
+              <strong id="biasValue">Looks organic</strong>
+            </div>
+          </div>
+
+          <div class="wallet-chip" id="walletChip">Connect a wallet to personalize your score.</div>
+        </aside>
+      </section>
+
+      <section class="grid-two">
+        <section class="panel focus-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Signal engine</p>
+              <h2>What BaseScore pays attention to</h2>
+            </div>
+            <p class="section-note">The goal is to reward believable patterns, not fake effort.</p>
+          </div>
+
+          <div class="signal-grid" id="signalGrid"></div>
+        </section>
+
+        <aside class="panel identity-panel">
+          <p class="eyebrow">Publisher</p>
+          <h2>Shipped by a real Base native</h2>
+          <div class="identity-card">
+            <div class="identity-row">
+              <span class="identity-label">Base name</span>
+              <strong>gizdusum.base.eth</strong>
+            </div>
+            <div class="identity-row">
+              <span class="identity-label">X</span>
+              <a href="https://x.com/gizdusumandnode" target="_blank" rel="noreferrer">@gizdusumandnode</a>
+            </div>
+            <div class="identity-row">
+              <span class="identity-label">Positioning</span>
+              <strong>For airdrop reward curious users</strong>
+            </div>
+          </div>
+
+          <div class="identity-note">
+            Later, we can attach this app to your Base App identity and publish it through your own domain and Base discovery flow.
+          </div>
+        </aside>
+      </section>
+
+      <section class="panel mission-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">Weekly brief</p>
+            <h2>Three moves to improve your odds without looking fake</h2>
+          </div>
+          <p class="section-note">These are reputation moves, not mindless transaction loops.</p>
+        </div>
+
+        <div class="mission-deck" id="missionDeck"></div>
+      </section>
+
+      <section class="grid-two lower-grid">
+        <section class="panel squads-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Squads</p>
+              <h2>People save apps that make them compete</h2>
+            </div>
+            <p class="section-note">A social loop for farmers who want status, not just tasks.</p>
+          </div>
+
+          <div class="leaderboard" id="leaderboard"></div>
+        </section>
+
+        <section class="panel app-hooks-panel">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Why this can become a favorite</p>
+              <h2>Built for repeat opens inside Base App</h2>
+            </div>
+          </div>
+
+          <div class="hook-list">
+            <article>
+              <strong>Instant payoff</strong>
+              <p>You connect once and immediately get a score, a persona, and a reputation diagnosis.</p>
+            </article>
+            <article>
+              <strong>Daily relevance</strong>
+              <p>The app can refresh advice, hot apps, and clean actions every day without turning into quest spam.</p>
+            </article>
+            <article>
+              <strong>Share pressure</strong>
+              <p>People will compare scores, dunk on mercenary behavior, and chase a higher status tier.</p>
+            </article>
+            <article>
+              <strong>Base-native expansion</strong>
+              <p>We can later add Basenames, mini app referrals, streaks, and reputation mints.</p>
+            </article>
+          </div>
+        </section>
+      </section>
+
+      <section class="panel roadmap-panel">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow">MVP direction</p>
+            <h2>What comes next after this prototype</h2>
+          </div>
+        </div>
+
+        <div class="roadmap-grid">
+          <article>
+            <span class="roadmap-step">01</span>
+            <strong>Base App identity binding</strong>
+            <p>Attach ownership, metadata, and discovery assets to your actual Base App account.</p>
+          </article>
+          <article>
+            <span class="roadmap-step">02</span>
+            <strong>Real onchain scoring</strong>
+            <p>Replace the deterministic demo logic with wallet reads and protocol-level activity signals.</p>
+          </article>
+          <article>
+            <span class="roadmap-step">03</span>
+            <strong>Squad leaderboards</strong>
+            <p>Let friends compare clean-score movement and save the app for weekly check-ins.</p>
+          </article>
+          <article>
+            <span class="roadmap-step">04</span>
+            <strong>Share cards</strong>
+            <p>Generate exportable score cards for X and Base social feeds with one tap.</p>
+          </article>
+        </div>
+      </section>
+
+      <footer class="footer-note">
+        <span>BaseScore prototype for gizdusum.base.eth</span>
+        <span>Designed to become a sticky Base App experience for airdrop reward hunters.</span>
+      </footer>
+    </main>
+  </div>
+
+  <script src="./app.js"></script>
+</body>
+</html>
